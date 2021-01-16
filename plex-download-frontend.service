@@ -1,0 +1,12 @@
+[Unit]
+Description=ReactJS frontend for Plex Download
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/npm run start --prefix /home/pi/Documents/Development/plex-download-frontend
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
+
